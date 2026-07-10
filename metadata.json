@@ -1,0 +1,6 @@
+{
+  "name": "Glow Heart Particle Animation",
+  "description": "An endlessly looping cinematic, interactive canvas artwork where thousands of glowing 'I love you' text particles bloom into a breathing, pulsing heart with custom sound synthesis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
