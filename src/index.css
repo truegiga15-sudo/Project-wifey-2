@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .radial-vignette {
+    background: radial-gradient(circle at center, transparent 40%, rgba(6, 6, 8, 0.85) 100%);
+  }
+}
+
+/* Base resets */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #060608;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom gorgeous slider styling for the HUD intensity controller */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FF6AB8;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FF6AB8;
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FF6AB8;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FF6AB8;
+  border: none;
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.3);
+}
+
